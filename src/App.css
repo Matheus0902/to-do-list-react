@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.taskCompleted-true {
+  background-color: #66ff55;
+}
+
+body {
+  padding-top: 50px;
+}
+
+body, input {
+  font-size: 16px;
+  color: #233947;
+  font-family: "Roboto Slab", serif;
+}
+
+body input {
+  background: transparent;
+}
+
+.app {
+  width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+#list {
+  max-width: 600px;
+  min-height: 300px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  margin-top: 20px;
+  background-color: #d0e0eb;
+  list-style: none;
+}
+
+#list li {
+  padding: 2px;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox{
+  cursor: pointer;
+}
+
+#list li .taskDescription {
+  width: 80%;
+  border-bottom: 1px solid #49708a;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.editOrRemove {
+  display: flex;
+  gap: 5px;
+}
+
+.buttons {
+  width: 15px;
+  height: 15px;
+  background: none;
+  cursor: pointer;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: .2s;
+}
+
+.edit {
+  background-image: url("./assets/edit.svg");
+}
+
+.remove {
+  background-image: url("./assets/remove.svg");
+}
+
+.remove:hover {
+  background-image: url("./assets/remove-red.svg");
+}
+
+form{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+form input {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: #88abc2;
+  font-size: 16px;
+  color: #233947;
+  border-radius: 5px;
+  padding: 15px 10px;
+  outline: none;
+}
+
+form button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #a6db1f;
+  transition: .5s;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  background-color: #cbff47;
+}
+
+form button img {
+  width: 30px;
+  color: #233947;
+}
